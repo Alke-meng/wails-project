@@ -1,0 +1,23 @@
+
+name: "web_app"
+mode: "dev"
+version: 1.2
+start_time: "2020-07-01"
+machine_id: 1
+
+log:
+  level: "debug"
+  filename: "web_app.log"
+  max_size: 200
+  max_page: 30
+  max_backups: 7
+
+mysql:
+  host: "127.0.0.1"
+  port: 3306
+  user: "root"
+  password: "123456"
+  dbname: "mine"
+  max_open_conns: 10
+  max_idle_conns: 5
+  max_life_time: 1800

@@ -1,0 +1,28 @@
+//侧边栏宽度
+$sideBarWidth: 210px;
+//头部的高度
+$header-height: 50px;
+//主色调
+$primaryColor: #1890ff;
+//白色菜单颜色
+$menuLightBg: #e6f7ff;
+$color-light-text: #606266;
+$color-white: #fff;
+//黑色菜单颜色
+$menuDarkBg: #191a23;
+$color-dark-text: #ffffffa6;
+$openMenuBg: #0a0a0e;
+//顶部菜单的logo宽度
+$header-logo-width: 210px;
+//页面背景颜色
+$pageBg: #f0f2f5;
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  primaryColor: $primaryColor;
+  menuLightBg: $menuLightBg;
+  menuDarkBg: $menuDarkBg;
+  sideBarWidth: $sideBarWidth;
+  headerHeight: $header-height;
+}
