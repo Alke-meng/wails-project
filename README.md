@@ -12,7 +12,7 @@
 
 编译命令：`wails build -clean  -ldflags "-w -s -H windowsgui"  -o aite.exe` 
 
-编译exe文件地址：`win-desk/build/bin` 
+编译exe文件地址：`win-desk/build/bin` (也可下载已编译好的 aite.exe)
 
 wails 具体使用请参考官网 https://wails.io/
 
