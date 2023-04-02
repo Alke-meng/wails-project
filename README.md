@@ -16,7 +16,7 @@ wails 具体使用请参考官网 https://wails.io/
 
 **特别注意**
 
-win-desk/service/script/City.mmdb 文件夹中离线IP解析数据源请自行更新，网址：https://dev.maxmind.com/geoip/geolite2-free-geolocation-data??lang=en`
+win-desk/service/script/City.mmdb 文件夹中离线IP解析数据源请自行更新，网址：https://dev.maxmind.com/geoip/geolite2-free-geolocation-data??lang=en
 
 ### liunx 后端
 
@@ -85,7 +85,7 @@ soar 具体使用请参考官网 https://github.com/XiaoMi/soar
 ![image](https://github.com/Alke-meng/wails-project/blob/main/images/7.png)
 
 ---
-感谢以下开源
+### 感谢以下开源
 > Wails https://wails.io/
 
 > Percona Toolkit https://docs.percona.com/percona-toolkit/pt-query-digest.html
