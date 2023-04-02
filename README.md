@@ -1,7 +1,6 @@
-# 欢迎使用 wails-project 
+# 欢迎使用 wails-project
 
 **一款后端go语言，前端采用vue3、element plus，利用 wails 构建的 redis、mysql、nginx 简易工具；项目分为两部分：window 桌面前端 和 liunx 后端**
-
 
 ### window 桌面前端
 
@@ -15,7 +14,7 @@
 
 wails 具体使用请参考官网 https://wails.io/
 
-**特别注意：配置文件中的数据库相关信息要修改**
+**特别注意**
 
 win-desk/service/script/City.mmdb 文件夹中离线IP解析数据源请自行更新，网址：https://dev.maxmind.com/geoip/geolite2-free-geolocation-data??lang=en`
 
@@ -68,6 +67,7 @@ win-desk/service/script/City.mmdb 文件夹中离线IP解析数据源请自行�
 
 soar 具体使用请参考官网 https://github.com/XiaoMi/soar
 
+---
 ### 项目图片演示
 
 ![image](https://github.com/Alke-meng/wails-project/blob/main/images/1.png)
@@ -84,4 +84,15 @@ soar 具体使用请参考官网 https://github.com/XiaoMi/soar
 
 ![image](https://github.com/Alke-meng/wails-project/blob/main/images/7.png)
 
+---
+感谢以下开源
+> Wails https://wails.io/
+
+> Percona Toolkit https://docs.percona.com/percona-toolkit/pt-query-digest.html
+
+> Soar https://github.com/XiaoMi/soar
+
+> Nginx-log-analyzer https://github.com/fantasticmao/nginx-log-analyzer
+
+> Redir-rdb https://github.com/sripathikrishnan/redis-rdb-tools
 
