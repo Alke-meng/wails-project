@@ -12,6 +12,11 @@
               <p>
                 基于Redis、Mysql、Nginx工具
               </p>
+              <p>
+                <el-link href="https://github.com/Alke-meng/wails-project" target="_blank" type="success">
+                  如果对您有帮助，欢迎 <el-icon><StarFilled /></el-icon> Star https://github.com/Alke-meng/wails-project
+                </el-link>
+              </p>
             </div>
           </div>
         </el-card>
