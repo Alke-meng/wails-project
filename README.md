@@ -96,5 +96,5 @@ soar 具体使用请参考官网 https://github.com/XiaoMi/soar
 
 > Nginx-log-analyzer https://github.com/fantasticmao/nginx-log-analyzer
 
-> Redir-rdb https://github.com/sripathikrishnan/redis-rdb-tools
+> Redis-rdb https://github.com/sripathikrishnan/redis-rdb-tools
 
