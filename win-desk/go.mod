@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/oschwald/geoip2-golang v1.8.0
 	github.com/tidwall/gjson v1.14.4
-	github.com/wailsapp/wails/v2 v2.3.1
+	github.com/wailsapp/wails/v2 v2.4.1
 	golang.org/x/text v0.3.7
 )
 

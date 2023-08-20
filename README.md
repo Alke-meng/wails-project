@@ -2,6 +2,26 @@
 
 **一款后端go语言，前端采用vue3、element plus，利用 wails 构建的 redis、mysql、nginx 简易工具；项目分为两部分：window 桌面前端 和 liunx 后端**
 
+### 开发环境
+
+> go v1.18.1
+> 
+> node v16.18.1
+> 
+> wails v2.4.1 
+> 
+>温馨提示：运行该项目需要指定【wails】版本，go install github.com/wailsapp/wails/v2/cmd/wails@v2.4.1
+
+进入win文件夹：`cd win-desk`
+
+执行命令：`wails dev` 启动开发模式
+
+编译命令：`wails build -clean  -ldflags "-w -s -H windowsgui"  -o aite.exe`
+
+编译exe文件地址：`win-desk/build/bin` (也可下载已编译好的 aite.exe)
+
+wails 具体使用请参考官网 https://wails.io/
+
 ### window 桌面前端
 
 > 开发桌面
@@ -68,6 +88,15 @@ win-desk/service/script/City.mmdb 文件夹中离线IP解析数据源请自行�
 		disable: false
 
 soar 具体使用请参考官网 https://github.com/XiaoMi/soar
+
+### 极简安装
+
+> windows 安装程序 setup.exe 引导安装桌面程序，默认安装目录 D:\AiteTool
+>
+> liunx tar 解压即可，需要自行修改 config.yaml、soar.yaml 配置文件中的相关信息
+>
+> 欢迎大家下载使用
+>
 
 ---
 ### 项目图片演示
