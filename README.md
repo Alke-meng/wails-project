@@ -94,7 +94,9 @@ soar 具体使用请参考官网 https://github.com/XiaoMi/soar
 > windows 安装程序 setup.exe 引导安装桌面程序，默认安装目录 D:\AiteTool
 >
 > liunx tar 解压即可，需要自行修改 config.yaml、soar.yaml 配置文件中的相关信息
->
+> 
+> 命令：tar -xzvf aiteTool.tar.gz
+> 
 > 欢迎大家下载使用
 >
 
