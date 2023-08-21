@@ -3,9 +3,10 @@ package middlewares
 import (
 	"gin/controllers"
 	"gin/pkg/jwt"
-	"github.com/gin-gonic/gin"
 	"net/http"
 	"strings"
+
+	"github.com/gin-gonic/gin"
 )
 
 // JWTAuthMiddleware 基于JWT的认证中间件
@@ -25,7 +26,7 @@ func JWTAuthMiddleware() func(c *gin.Context) {
 		}
 		// 按空格分割
 		parts := strings.SplitN(authHeader, " ", 2)
-		if !(len(parts) == 2 && parts[0] == "Bearer") {
+		if len(parts) != 2 || parts[0] != "Bearer" {
 			c.JSON(http.StatusOK, gin.H{
 				"code": 2,
 				"msg":  "请求头中auth格式有误",
