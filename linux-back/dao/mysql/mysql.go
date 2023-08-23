@@ -4,6 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 	"gin/settings"
+
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jmoiron/sqlx"
 	"github.com/spf13/viper"
@@ -116,6 +117,9 @@ func GetResultRowsForArray(rows *sql.Rows) (dataMaps [][]interface{}, err error)
 
 func ExecSqlDetail(sql string) (r interface{}) {
 	tx, err := db.Beginx()
+	if err != nil {
+		return fmt.Sprintf("beginx failed, err:%v\n", err)
+	}
 
 	//使用事务对象tx, 执行事务
 	if _, err := tx.Exec(`Set optimizer_trace="enabled=on"`); err != nil {
@@ -141,6 +145,10 @@ func ExecSqlDetail(sql string) (r interface{}) {
 		return fmt.Sprintf("exec profile detail failed, err:%v\n", err)
 	}
 	tmp2, err := GetResultRowsForArray(rows2)
+	if err != nil {
+		tx.Rollback()
+		return fmt.Sprintf("exec profile detail failed, err:%v\n", err)
+	}
 	rows2.Close()
 
 	rows3, err := tx.Query("SELECT TRACE FROM information_schema.OPTIMIZER_TRACE;")
@@ -149,6 +157,10 @@ func ExecSqlDetail(sql string) (r interface{}) {
 		return fmt.Sprintf("exec select trace detail failed, err:%v\n", err)
 	}
 	tmp3, err := GetResultRowsForArray(rows3)
+	if err != nil {
+		tx.Rollback()
+		return fmt.Sprintf("exec select trace detail failed, err:%v\n", err)
+	}
 	rows3.Close()
 
 	tx.Commit()

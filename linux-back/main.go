@@ -9,16 +9,17 @@ import (
 	"gin/pkg/snowflake"
 	"gin/routes"
 	"gin/settings"
-	"github.com/gin-gonic/gin"
-	"github.com/jessevdk/go-flags"
-	"github.com/tidwall/gjson"
-	"go.uber.org/zap"
 	"log"
 	"net/http"
 	"os"
 	"os/signal"
 	"syscall"
 	"time"
+
+	"github.com/gin-gonic/gin"
+	"github.com/jessevdk/go-flags"
+	"github.com/tidwall/gjson"
+	"go.uber.org/zap"
 )
 
 type Option struct {
@@ -31,7 +32,7 @@ var opt Option
 func main() {
 	//0、命令行启动
 	if _, err := flags.Parse(&opt); err != nil {
-		fmt.Println(fmt.Sprintf("程序启动错误，请检查相关参数:%v。输入--help可查看帮助", err))
+		fmt.Printf("程序启动错误，请检查相关参数:%v。输入--help可查看帮助", err)
 		return
 	}
 
